@@ -9,6 +9,7 @@ from constantes import *
 pokemon1 = Pokemon("Bulbasaur", 100, "Grass", "poison")
 
 pokemon2 = Pokemon("Charmander", 100, "Fire", None)
+
 # Stats
 
 pokemon1.stats = {
@@ -30,5 +31,5 @@ pokemon2.stats = {
     SPDEFENSE: 65,
     SPEED: 65,
 }
-print(pokemon1)
+
 

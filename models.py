@@ -1,6 +1,6 @@
 import constantes
 
-class Pokemon():
+class Pokemon:
     def __init__(self, name, level, type1, type2):
         self.name = name
         self.level = level

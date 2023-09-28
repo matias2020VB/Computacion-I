@@ -1,4 +1,6 @@
-class PokemonCharacter():
+import constantes
+
+class Pokemon():
     def __init__(self, name, level, type1, type2):
         self.name = name
         self.level = level
@@ -17,7 +19,8 @@ class Attack():
         self.power = power
         self.catergory = category
         self.pp = pp
-
+        self.accuracy = accurracy
+        
 class Battle():
     def __init__(self, pokemon1, pokemon2):
         self.pokemon1 = pokemon1 # Mi pokemon
@@ -25,10 +28,13 @@ class Battle():
         self.actual_turn = 0 # Nos mostrara que turno estamos en el combate.
 
     def is_finished(self): 
+        return self.pokemon1.current_hp <= 0 or self.pokemon2.current_hp <= 0
+
 #   ¿Cuando se termina un combate pokemon?
 #   Se termina cuando uno de los dos pokemones tiene 0 puntos de salud o pueden ser negativos considerando que algunos ataques pueden dejar
 #   En vida negativa (dependiendo del daño)
-        return self.pokemon1.current_hp <= 0 or self.pokemon2.current_hp <= 0  
+    
+    
     
     
    

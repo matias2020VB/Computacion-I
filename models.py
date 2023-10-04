@@ -34,7 +34,19 @@ class Battle():
 #   Se termina cuando uno de los dos pokemones tiene 0 puntos de salud o pueden ser negativos considerando que algunos ataques pueden dejar
 #   En vida negativa (dependiendo del daño)
     
+    class turn():
+        def __init__(self) -> None:
+            self.command1 = None
+            self.command2 = None
+            
+        def can_start(self):
+            return self.command1
+        
     
+    class command():
+        def __init__(self, action):
+            self.action = action
+
     
     
    
